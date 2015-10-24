@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0087)https://www.java.net/forum/topic/jdk/java-se/read-encrypted-msconstxt-outlook-item-java -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" class="js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Read encrypted MSCONS.txt (Outlook item) in Java  | Java.net</title>
+<link rel="shortcut icon" href="https://www.java.net/sites/default/files/java_adaptive_favicon_2.png" type="image/x-icon">
+<meta name="description" content="Java.net is the source for Java Technology Collaboration.">
+<meta name="keywords" content="java,java.net,java technology collaboration,java collaboration,javafx,glassfiish,embedded,netbeans,Java SE">
+<link rel="canonical" href="http://www.java.net/forum/topic/jdk/java-se/read-encrypted-msconstxt-outlook-item-java">
+<meta name="revisit-after" content="1 day">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/aggregator.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/book.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/node.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/poll.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/defaults.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/system.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/system-menus.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/user.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/content-module.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/ctools.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/date.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/datepicker.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/datetweaks.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/jquery.timepicker.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/filefield.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/fivestar.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/lightbox_alt.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/panels.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/prettify.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/quote.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/simplenews.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/twitter-pull-listing.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/forum.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/farbtastic.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/calendar.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/extlink.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/fieldgroup.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/views.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/advanced_forum-structure.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/advanced_forum.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/comment.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/taxonomy_super_select.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/custom_search.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/base.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/starter.css">
+<link type="text/css" rel="stylesheet" media="all" href="./articledetails_files/theme.css">
+<style type="text/css">
+#container{width:100%;}.two-sidebars .content-inner{margin-left:240px; margin-right:240px;}.sidebar-first .content-inner{margin-left:240px; margin-right:0;}.sidebar-last .content-inner{margin-right:240px; margin-left:0;}#sidebar-first{width:240px;margin-left:-100%;}#sidebar-last{width:240px;margin-left:-240px;}
+</style>
+<!--[if lte IE 6]><style type="text/css" media="all">@import "/sites/all/themes/java_adaptive/css/ie6.css";</style><![endif]-->
+<!--[if IE 7]><style type="text/css" media="all">@import "/sites/all/themes/java_adaptive/css/ie7.css";</style><![endif]-->
+<!--[if IE 8]><style type="text/css" media="all">@import "/sites/all/themes/java_adaptive/css/ie8.css";</style><![endif]-->
+</head>
+<body class="not-front not-logged-in article-type-forum two-sidebars section-forum page-node-904172  chrome chrome45 win desktop lightbox-processed jsenabled">
+<div id="container">
+<!--
+<div style="margin-bottom: 0.5em; background-color: rgb(255, 204, 204); font-size: 1.00em; padding: 0.5em; border: 1px solid rgb(255, 0, 0); text-align: center;"> <font color="red">
+Notice: Java.net will be offline during a scheduled maintenance window from 6-8 pm PT on February 1, 2012 (2-4 am UTC February 2, 2012). We expect the site to be offline for approximately 30 minutes during that window while we do some hardware upgrades. During this offline period the forge side will be unavailable and the rest of the site will be read only.
+The project pages on Java.net, as well as Kenai.com, OpenOffice.org, and NetBeans.org are offline.  We apologize for the inconvenience and are working to restore service.
+</font></div>
+
+<div style="margin-bottom: 0.5em; background-color: rgb(255, 204, 204); font-size: 1.00em; padding: 0.5em; border: 1px solid rgb(255, 0, 0); text-align: center;"> <font color="red">
+Notice: Java.net will be offline starting around noon pacific time (7pm UTC) on Friday, April 27, through noon pacific time (7pm UTC) on Monday, April 30 for scheduled maintenance.
+</font></div>
+
+<div style="margin-bottom: 0.5em; background-color: rgb(255, 204, 204); font-size: 1.00em; padding: 0.5em; border: 1px solid rgb(255, 0, 0); text-align: center;"> <font color="red">
+Notice: The site is down for maintenance and will be back up shortly. Please note all projects are still available at &lt;projectname&gt;.java.net
+</font></div>
+
+<div style="margin-bottom: 0.5em; background-color: rgb(255, 250, 205); font-size: 1.00em; padding: 0.5em; border: 1px solid rgb(255, 0, 0); text-align: center;"> <font color="red">
+Notice: The site is currenly undergoing maintenance and you may experience slow response times until it is completed by 18:30 UTC/GMT. All projects are still available at &lt;projectname&gt;.java.net.
+</font></div>
+
+<div style="margin-bottom: 0.5em; background-color: rgb(255, 250, 205); font-size: 1.00em; padding: 0.5em; border: 1px solid rgb(255, 0, 0); text-align: center;"> <font color="red">
+Notice: Java.net will be offline starting around 4pm PT/11pm UTC on Friday, April 19 for a scheduled hardware update. We could be down through Sunday, April 21 at 6pm PT/1am (April 22) UTC, but hope to be finished before then. See <a href="http://weblogs.java.net/blog/sonyabarry/archive/2013/03/31/hardware-upgrade-scheduled-april-19-2013">Sonya's blog</a> for more details.<br/>
+During this time period the CMS will be in read only mode, but there may be times when it is unavailable.
+</font></div>
+
+<div style="margin-bottom: 0.5em; background-color: rgb(255, 250, 205); font-size: 1.00em; padding: 0.5em; border: 1px solid rgb(255, 0, 0); text-align: center;"> <font color="red">
+Jira 6 is coming to java.net on June 20 2014.  In order to stay current with Atlassian software updates we will be upgrading the existing Jira 4 to Jira 6.  See the following links for release notes for the intervening releases.<br/> <a href="https://confluence.atlassian.com/display/JIRA/JIRA+5.0+Release+Notes" target="new">JIRA 5.0 Release Notes</a> | <a href="https://confluence.atlassian.com/display/JIRA/JIRA+6.0+Release+Notes" target="new">JIRA 6.0 Release Notes</a> | <a href="https://confluence.atlassian.com/display/JIRA/JIRA+6.2+Release+Notes" target="new">JIRA 6.2 Release Notes</a>
+</font></div>
+
+<div style="margin-bottom: 0.5em; background-color: rgb(255, 250, 205); font-size: 1.00em; padding: 0.5em; border: 1px solid rgb(255, 0, 0); text-align: center;"> <font color="red">
+Java.net will be unavailable due to the Jira 6 upgrade from Friday June 20th at 6pm PDT(Saturday 2am UTC) through June 21st 2014 at 12:01 am PDT(8:01am Saturday UTC). We apologize for any inconvenience this may cause.
+</font></div>
+-->
+<div id="skip-nav" class="element-invisible">
+  <!-- To adjust the display of the skip link see the Advanced theme settings (General settings), and never use display:none! -->
+  <a href="https://www.java.net/forum/topic/jdk/java-se/read-encrypted-msconstxt-outlook-item-java#main-content">Skip to main content</a> </div>
+<div id="logonboard">
+  <!-- /block -->
+</div>
+<!-- /leaderboard -->
+<div id="header" class="clearfix">
+  <div id="branding">
+    <div class="logo-site-name"><strong> <span id="logo"><a href="https://www.java.net/" rel="home"><img src="./articledetails_files/logo.png" alt="Java.net logo" title="Home page"></a></span></strong></div>
+    <!-- /logo/site name -->
+    <!-- /slogan -->
+  </div>
+  <!-- /branding -->
+  <!-- /search box -->
+</div>
+<!-- /header -->
+<div id="primary" class="nav">
+  <div id="primary-inner"> </div>
+</div>
+<!-- /primary link menu -->
+<div id="columns">
+<div class="columns-inner clearfix">
+<div id="content-column">
+  <div class="content-inner">
+    <!-- /content-top -->
+    <div id="main-content">
+      <div id="main-content-header">
+        <h1 id="page-title">Read encrypted MSCONS.txt (Outlook item) in Java </h1>
+        <!-- /breadcrumb -->
+      </div>
+      <div id="content">
+        <div id="content-main-top">
+          <!-- /block -->
+        </div>
+        <div id="node-904172" class="top-post forum-post article clear-block">
+          <div class="post-info clear-block">
+            <div class="posted-on">
+              <div class="post-title"> Read encrypted MSCONS.txt (Outlook item) in Java </div>
+              August 4, 2014 - 02:49 </div>
+          </div>
+          <div class="forum-post-wrapper">
+            <div class="forum-post-panel-sub">
+              <div class="author-pane">
+                <div class="author-pane-inner">
+                  <div class="author-pane-section author-pane-general">
+                    <div class="author-pane-line author-name"> fynn </div>
+                    <div class="author-pane-line author-offline"> Offline </div>
+                    <div class="author-pane-line author-joined"> <span class="author-pane-label">Joined:</span> 2014-07-25 </div>
+                  </div>
+                  <div class="author-pane-section author-pane-contact"> </div>
+                  <div class="author-pane-section author-pane-admin"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="forum-post-panel-main clear-block">
+              <div class="content">
+                <p></p>
+                <p>Hi All,</p>
+                <p>I have an encrypted MSCONS.txt file as Outlook item. I also have a Digital Certificate file (Certificate.pfx) with a password.</p>
+                <p>Could someone please give me some pointer as to how I can read the actual MSCONS.txt file in my java application? A sample code snippet would be great.</p>
+                <p>Thanks. </p>
+              </div>
+            </div>
+          </div>
+          <div class="forum-post-footer clear-block">
+            <div class="forum-post-links">
+              <ul class="links inline forum-links">
+                <li class="statistics_counter"><span>810 reads</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /main-content -->
+  </div>
+</div>
+<!-- /content-column -->
+<div id="sidebar-first" class="sidebar">
+<div id="block-menu-menu-get-involved" class="block">
+<div class="block-inner">
+<!-- /container -->
+<script type="text/javascript" src="./articledetails_files/jquery.min.js"></script>
+<script type="text/javascript" src="./articledetails_files/drupal.js"></script>
+<script type="text/javascript" src="./articledetails_files/datetweaks.js"></script>
+<script type="text/javascript" src="./articledetails_files/date-functions.js"></script>
+<script type="text/javascript" src="./articledetails_files/jquery.timepicker.js"></script>
+<script type="text/javascript" src="./articledetails_files/fivestar.js"></script>
+<script type="text/javascript" src="./articledetails_files/lightbox.js"></script>
+<script type="text/javascript" src="./articledetails_files/panels.js"></script>
+<script type="text/javascript" src="./articledetails_files/prettify.js"></script>
+<script type="text/javascript" src="./articledetails_files/prettify.loader.js"></script>
+<script type="text/javascript" src="./articledetails_files/extlink.js"></script>
+<script type="text/javascript" src="./articledetails_files/custom_search.js"></script>
+<script type="text/javascript" src="./articledetails_files/jquery.a_form.packed.js"></script>
+<script type="text/javascript" src="./articledetails_files/ajax.js"></script>
+<script type="text/javascript" src="./articledetails_files/at-scripts.js"></script>
+<script type="text/javascript" src="./articledetails_files/java_custom.js"></script>
+<script type="text/javascript" src="./articledetails_files/forums.js"></script>
+<script type="text/javascript" src="./articledetails_files/java_search.js"></script>
+<script type="text/javascript" src="./articledetails_files/ajax_views_refresh.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "datetweaks": { "use_dropdown": true }, "fivestar": { "titleUser": "Your rating: ", "titleAverage": "Average: ", "feedbackSavingVote": "Saving your vote...", "feedbackVoteSaved": "Your vote has been saved.", "feedbackDeletingVote": "Deleting your vote...", "feedbackVoteDeleted": "Your vote has been deleted." }, "lightbox2": { "rtl": 0, "file_path": "/(\\w\\w/)sites/default/files", "default_image": "/sites/all/modules/lightbox2/images/brokenimage.jpg", "border_size": 0, "font_color": "000", "box_color": "fff", "top_position": "", "overlay_opacity": "0.8", "overlay_color": "000", "disable_close_click": 1, "resize_sequence": 0, "resize_speed": 400, "fade_in_speed": 400, "slide_down_speed": 600, "use_alt_layout": 1, "disable_resize": 0, "disable_zoom": 0, "force_show_nav": 0, "show_caption": 1, "loop_items": 0, "node_link_text": "View Image Details", "node_link_target": 0, "image_count": "Image !current of !total", "video_count": "Video !current of !total", "page_count": "Page !current of !total", "lite_press_x_close": "press \x3ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\x3e\x3ckbd\x3ex\x3c/kbd\x3e\x3c/a\x3e to close", "download_link_text": "", "enable_login": false, "enable_contact": false, "keys_close": "c x 27", "keys_previous": "p 37", "keys_next": "n 39", "keys_zoom": "z", "keys_play_pause": "32", "display_image_size": "original", "image_node_sizes": "()", "trigger_lightbox_classes": "", "trigger_lightbox_group_classes": "", "trigger_slideshow_classes": "", "trigger_lightframe_classes": "", "trigger_lightframe_group_classes": "", "custom_class_handler": 0, "custom_trigger_classes": "", "disable_for_gallery_lists": true, "disable_for_acidfree_gallery_lists": true, "enable_acidfree_videos": true, "slideshow_interval": 5000, "slideshow_automatic_start": true, "slideshow_automatic_exit": true, "show_play_pause": true, "pause_on_next_click": false, "pause_on_previous_click": true, "loop_slides": false, "iframe_width": 900, "iframe_height": 700, "iframe_border": 1, "enable_video": 0 }, "prettify": { "linenums": false, "match": ".content", "nocode": "no-code", "custom": [  ], "markup": { "code": true, "pre": true, "precode": true } }, "extlink": { "extTarget": "_blank", "extClass": 0, "extSubdomains": 1, "extExclude": "", "extInclude": "", "extCssExclude": "", "extCssExplicit": "", "extAlert": 0, "extAlertText": "This link will take you to an external web site. We are not responsible for their content.", "mailtoClass": 0 }, "custom_search": { "form_target": "_self", "solr": 0 } });
+//--><!]]>
+</script>
+<!--  Begin SiteCatalyst code  -->
+<script language="JavaScript" src="./articledetails_files/s_code_remote.js"></script>
+<script type="text/javascript" src="./articledetails_files/metrics_group1.js"></script>
+<script language="JavaScript">
+<!--
+var s_channel="other";
+//--></script>
+<!--  End SiteCatalyst code  -->
+<script type="text/javascript" src="./articledetails_files/browserclass.js"></script>
+<!-- 192.168.8.57 -->
+<div id="lightbox2-overlay" style="display: none;"></div>
+<div id="lightbox" style="display: none;" class="lightbox2-alt-layout">
+  <div id="outerImageContainer" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+    <div id="modalContainer" style="display: none; padding: 0px;"></div>
+    <div id="frameContainer" style="display: none; padding: 0px;"></div>
+    <div id="imageContainer" style="display: none; padding: 0px;"><img id="lightboxImage" alt=""></div>
+    <div id="loading"><a href="https://www.java.net/forum/topic/jdk/java-se/read-encrypted-msconstxt-outlook-item-java#" id="loadingLink"></a></div>
+    <div id="bottomNav"><a id="bottomNavClose" title="Close" href="https://www.java.net/forum/topic/jdk/java-se/read-encrypted-msconstxt-outlook-item-java#" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"></a><a id="bottomNavZoom" href="https://www.java.net/forum/topic/jdk/java-se/read-encrypted-msconstxt-outlook-item-java#" style="bottom: 0px; right: 0px;"></a><a id="bottomNavZoomOut" href="https://www.java.net/forum/topic/jdk/java-se/read-encrypted-msconstxt-outlook-item-java#" style="bottom: 0px; right: 0px;"></a></div>
+  </div>
+  <div id="imageDataContainer" class="clearfix" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+    <div id="imageData">
+      <div id="hoverNav"><a id="prevLink" title="Previous" href="https://www.java.net/forum/topic/jdk/java-se/read-encrypted-msconstxt-outlook-item-java#" style="padding-top: 0px;"></a><a id="nextLink" title="Next" href="https://www.java.net/forum/topic/jdk/java-se/read-encrypted-msconstxt-outlook-item-java#" style="padding-top: 0px;"></a></div>
+      <div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span><a id="lightshowPause" title="Pause Slideshow" href="https://www.java.net/forum/topic/jdk/java-se/read-encrypted-msconstxt-outlook-item-java#" style="display: none;"></a><a id="lightshowPlay" title="Play Slideshow" href="https://www.java.net/forum/topic/jdk/java-se/read-encrypted-msconstxt-outlook-item-java#" style="display: none;"></a></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

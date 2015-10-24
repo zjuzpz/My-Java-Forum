@@ -1,0 +1,20 @@
+
+#elements tr.region-message {
+  font-weight: normal;
+  color: #999;
+}
+#elements tr.region-populated {
+  display: none;
+}
+
+fieldset.custom_search-popup {
+  display: none;
+  position: absolute;
+}
+
+input.custom-search-default-value { color:#999;}
+.element-invisible {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+}
